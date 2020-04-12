@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=500, initial-scale=1">
+  <title>Garage</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main data-car="bmw">
+    <div class="logo">
+        <button type="button" class="up"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>
+          <img src="img/logo_bmw.png" id="logo" alt="logo gaughe" >
+        <button type="button" class="down"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+    </div>
+
+    <div class="menu">
+      <figure>
+        <button type="button" class="up"><i class="fa fa-chevron-up" aria-hidden="true"></i></button>
+        <a href="#" id="un" >Porsche</a>
+        <a href="#" id="deux" >BMW</a>
+        <a href="#" id="trois" >Lamborghini</a>
+        <button type="button" class="down"><i class="fa fa-chevron-down" aria-hidden="true"></i></button>
+      <figure>
+    </div>
+
+    <section>
+      <article id="moteur">
+        <div class="couverture">
+          <img src="img/cog.svg" alt="moteur" id="cog1">
+          <img src="img/cog.svg" alt="moteur" id="cog2">
+          <h1>Moteur</h1>
+        </div>
+        <div class="details">
+          <div class="detail">
+            <p id="speed">Vitess Max : 255 km/h</p>
+            <p id="puissance">Puissance : 365 ch</p>
+          </div>
+        </div>
+      </article>
+      <article id="suspension">
+        <div class="couverture">
+          <img src="img/suspension.svg" alt="suspension" id="suspension1">
+          <img src="img/suspension.svg" alt="suspension" id="suspension2">
+          <h1>Suspension</h1>
+        </div>
+        <div class="details">
+          <div class="detail">
+            <p id="trainAvant"> Train avant : Jambes de suspension à double articulation</p>
+            <p id="trainArriere"> Train arriere : Jambes de suspension à double articulation</p>
+          </div>
+        </div>
+      </article>
+      <article id="frein">
+        <div class="couverture">
+          <img src="img/frein.svg" alt="frein" id="frein">
+          <h1>Frein</h1>
+        </div>
+        <div class="details">
+          <div class="detail">
+            <p id="freinAvant"> Frein avant : Disques ventilés</p>
+            <p id="freinArriere"> Frein arriere : Disques ventilés</p>
+          </div>
+        </div>
+      </article>
+    </section>
+  </main>
+  <footer>
+    <p><a href=" https://ricafortjason.github.io/">ricafortjason.github.io</a></p>
+  </footer>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+  <script src="js/article.js"></script>
+  <script src="js/lambo.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
