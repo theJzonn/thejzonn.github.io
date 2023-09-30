@@ -1,0 +1,132 @@
+/* --------------------------
+    importing fonts
+----------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;700;900&display=swap');
+
+
+/* --------------------------
+    body and utilities style
+----------------------------- */
+body{
+    background-color: #F4F4F4;
+    font-family: "Poppins", sans-serif;
+}
+
+/* --------------------------
+    header area
+----------------------------- */
+
+/* --------------------------
+    navbar area
+----------------------------- */
+.nav-search-bar{
+    border-radius: 1.5rem;
+}
+
+.nav-search-bar ,.nav-search-bar input{
+    outline: none;
+    padding: .5rem;
+    color: #BABABA;
+    background: #F1F1F1;
+}
+
+.nav-search-bar i{
+    padding-right: .5rem;
+}
+
+
+
+ /* --------------------------
+     slider area
+ ----------------------------- */
+ 
+.item{
+    border-radius: 2rem;
+}
+.item-1{
+    background-color: #fe6869;
+}
+.item-2{
+    background-color: #1f936e;
+}
+.item-3{
+    background-color: #e4e4e1;
+}
+.item button{
+    background-image: linear-gradient(180deg,#494949,#313131);
+    border: none;
+    
+}
+/* --------------------------
+    categories style
+----------------------------- */
+.categories .category{
+    border-radius: 1.2rem;
+}
+.categories >div > div>img{
+    width: 8rem;
+}
+
+.category-1{
+    background-image: linear-gradient(180deg,#FF9C35, #FFD019);
+}
+.category-2{
+    background-image: linear-gradient(180deg,#FF589B, #FF136F);
+} 
+.category-3{
+    background-image: linear-gradient(180deg,#4289FF, #3F07F8);
+} 
+
+/* --------------------------
+    shoes area 
+----------------------------- */
+.card{
+    border-radius: 1.5rem;
+}
+
+/* --------------------------
+    constant area
+----------------------------- */
+.contant-us-area{
+    background-color: #FFF2F1;
+    border-radius: 1.5rem;
+    padding: 9rem;
+}
+
+.send-box input, .send-box button{
+    padding: 1.2rem 1rem;
+    border: 0px;
+}
+.send-box input{
+    border-top-left-radius: .5rem;
+    border-bottom-left-radius: .5rem;
+    outline: none;
+}
+.send-box button{
+    background-image: linear-gradient(180deg,#FF589B,#FF136F);
+    border-top-right-radius: .5rem;
+    border-bottom-right-radius: .5rem;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+} 
+
+.item-tv {
+    background-color: #FEEAE9;
+}
+
+.headphone {
+    background-color: #fad7b1; 
+}
+
+.xBox {
+    background-color: #c9ddfd;
+}
+
+/* --------------------------
+    responsive style for mobile
+----------------------------- */
+@media  only screen and (max-width:799px) {
+    .contant-us-area{
+        padding: 2rem 0;
+    }
+}

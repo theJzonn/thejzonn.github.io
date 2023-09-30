@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dallure</title>
+    <!-- font-awesome cnd -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- bootstrap stylesheet -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- castom css -->
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+    <!-- =============== header start =============== -->
+    <header class="bg-white py-3">
+        <!-- =============== navbar start =============== -->
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="img/logo.png" alt="" class="d-inline-block align-text-top">
+                </a>
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <!-- 
+                    <div class="nav-search-bar p-1 ps-3 mx-auto d-flex align-items-center justify-content-between w-50">
+                        <input class="border-0 w-100" type="text" placeholder="Search"><i class="fas fa-search"></i>
+                    </div>
+                    -->
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Product</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- =============== navbar end =============== -->
+
+        <!-- ======================== image slider start ======================== -->
+        <section class="container py-5">
+            <div id="carouselExampleControls" class="carousel slide rounded" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active p-1 item item-1">
+                        <div class="row d-flex align-items-center p-5">
+                            <div class="col-lg-7">
+                                <h1>Nike Air Jordan</h1>
+                                <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
+                                    officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud
+                                    amet.</p>
+                                <h1>$1289</h1>
+                                <button class="btn btn-danger px-5 py-2 fs-6 fw-light">Buy now</button>
+                            </div>
+                            <div class="col-lg-5">
+                                <img src="img/airJordan.png" class="d-block img-fluid" alt="...">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item p-1 item item-2">
+                        <div class="row d-flex align-items-center p-5">
+                            <div class="col-lg-7">
+                                <h1>Adidas Stan Smith</h1>
+                                <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
+                                    officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud
+                                    amet.</p>
+                                <h1>$420</h1>
+                                <button class="btn btn-danger px-5 py-2 fs-6 fw-light">Buy now</button>
+                            </div>
+                            <div class="col-lg-5">
+                                <img src="img/stanSmith.png" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item p-1 item item-3">
+                        <div class="row d-flex align-items-center p-5">
+                            <div class="col-lg-7">
+                                <h1>Balenciaga </h1>
+                                <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
+                                    officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud
+                                    amet.</p>
+                                <h1>$420</h1>
+                                <button class="btn btn-danger px-5 py-2 fs-6 fw-light">Buy now</button>
+                            </div>
+                            <div class="col-lg-5">
+                                <img src="img/Balenciaga.png" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+        </section>
+        <!-- ======================== image slider end ======================== -->
+
+        <!-- ================== categories ===================== 
+        <section class="container mb-2">
+            <h1 class="text-dark">Categories</h1>
+            <div class="categories row g-4 py-4">
+                <div class="col-lg-4">
+                    <div class="category category-1 d-flex align-items-center justify-content-between px-5">
+                        <h2 class="text-white">Watch</h2>
+                        <img src="images/categories/watch.png">
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="category category-2 d-flex align-items-center justify-content-between px-5">
+                        <h2 class="text-white">Bag</h2>
+                        <img src="images/categories/bag.png">
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="category category-3 d-flex align-items-center justify-content-between px-5">
+                        <h2 class="text-white">Shoes</h2>
+                        <img src="images/categories/shoes.png">
+                    </div>
+                </div>
+            </div>
+        </section>
+        -->
+    </header>
+    <!-- =============== header end =============== -->
+
+    <!-- =============== main start =============== -->
+    <main>
+        <!-- =============== shoes area start =============== -->
+        <section class="container my-5">
+            <div class="d-flex justify-content-between mb-4">
+                <!-- <h1>Shoes</h1> -->
+                <h5 class="text-dark ms-auto">See All</h5>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="card border-0">
+                        <img src="img/yeezy.png" class="card-img-top my-5" alt="...">
+                        <div class="card-body text-center">
+                            <h5 class="card-title my-3">Adidas Yeezy</h5>
+                            <p class="card-text text-secondary my-3">Amet minim mollit non deserunt ullamco est sit
+                                aliqua
+                                dolor
+                                do amet sint.
+                            </p>
+                            <h3 class="my-3">$699</h3>
+                            <a href="#" class="btn btn-dark text-uppercase my-3">buy Now <i
+                                    class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card border-0">
+                        <img src="img/nike_zoom.png" class="card-img-top my-5" alt="...">
+                        <div class="card-body text-center">
+                            <h5 class="card-title my-3">Nike Zoom</h5>
+                            <p class="card-text text-secondary my-3">Amet minim mollit non deserunt ullamco est sit
+                                aliqua
+                                dolor
+                                do amet sint.
+                            </p>
+                            <h3 class="my-3">$799</h3>
+                            <a href="#" class="btn btn-dark text-uppercase my-3">buy Now <i
+                                    class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card border-0">
+                        <img src="img/nikeAirMax.png" class="card-img-top my-5" alt="...">
+                        <div class="card-body text-center">
+                            <h5 class="card-title my-3">Nike Air Max</h5>
+                            <p class="card-text text-secondary my-3">Amet minim mollit non deserunt ullamco est sit
+                                aliqua
+                                dolor
+                                do amet sint.
+                            </p>
+                            <h3 class="my-3">$1289</h3>
+                            <a href="#" class="btn btn-dark text-uppercase my-3">buy Now <i
+                                    class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+        <!-- =============== shes area end =============== -->
+
+        <!-- =============== backpack area start =============== -->
+        <section class="container my-5">
+            <div class="d-flex justify-content-between mb-4">
+                <h1>More products</h1>
+                <h5 class="text-dark">See All</h5>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="card border-0 item-tv">
+                        <img src="img/tv.png" class="card-img-top my-5" alt="...">
+                        <div class="card-body text-center">
+                            <h5 class="card-title my-3">Mi LED TV 4A PRO 32</h5>
+                            <p class="card-text text-secondary my-3">Amet minim mollit non deserunt ullamco est sit
+                                aliqua
+                                dolor
+                                do amet sint.
+                            </p>
+                            <h3>$699</h3>
+                            <a href="#" class="btn btn-dark text-uppercase my-3">buy Now <i
+                                    class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card border-0 headphone">
+                        <img src="img/headphone.png" class="card-img-top my-5" alt="...">
+                        <div class="card-body text-center">
+                            <h5 class="card-title my-3">Headset</h5>
+                            <p class="card-text text-secondary my-3">Amet minim mollit non deserunt ullamco est sit
+                                aliqua
+                                dolor
+                                do amet sint.
+                            </p>
+                            <h3>$799</h3>
+                            <a href="#" class="btn btn-dark text-uppercase my-3">buy Now <i
+                                    class="fas fa-arrow-right "></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card border-0 xBox">
+                        <img src="img/xbox.png" class="card-img-top my-5" alt="...">
+                        <div class="card-body text-center">
+                            <h5 class="card-title my-3">Xbox</h5>
+                            <p class="card-text text-secondary my-3">Amet minim mollit non deserunt ullamco est sit
+                                aliqua
+                                dolor
+                                do amet sint.
+                            </p>
+                            <h3>$1289</h3>
+                            <a href="#" class="btn btn-dark text-uppercase my-3">buy Now <i
+                                    class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+        <!-- =============== backpack area end =============== -->
+
+
+
+
+
+    </main>
+    <!-- =============== main end =============== -->
+
+
+
+
+
+
+    <!-- =============== footer start =============== -->
+    <footer class="bg-white p-5">
+        <!-- 
+
+        <div class="container contant-us-area text-center">
+            <h3 class="my-3">LET'S STAY IN TOUCH</h3>
+            <p class="m-0 my-3 text-secondary">Get updates on sales specials and more</p>
+            <div class="send-box d-flex justify-content-center w-75 mx-auto my-3">
+                <input class="w-75" type="text" placeholder="Enter Your Name">
+                <button class="w-25 btn btn-danger">Send</button>
+            </div>
+        </div>
+
+         -->
+    </footer>
+    <!-- =============== footer end =============== -->
+
+
+
+
+
+
+
+
+
+
+    <!-- bootstrap script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
