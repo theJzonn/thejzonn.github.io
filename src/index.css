@@ -1,0 +1,107 @@
+@import "tailwindcss";
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  button {
+    cursor: pointer;
+  }
+
+  body {
+    background-color: #b8b29f;
+    color: #0f0f0f;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+}
+
+/* On s'assure que le mode dark ne s'applique QUE si la classe .dark est sur html */
+html:not(.dark) .dark\:bg-\[\#030706\] {
+  background-color: #b8b29f !important;
+}
+
+/* ==========================================================================
+   OVERRIDE GLOBAL : TERMINAL PHOSPHORE (.dark)
+   S'APPLIQUE UNIQUEMENT LORSQUE LE THÈME SOMBRE EST ACTIF
+   ========================================================================== */
+
+/* 1. Transitions globales */
+.dark body,
+.dark header,
+.dark section,
+.dark main,
+.dark footer,
+.dark div,
+.dark nav {
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+/* 2. Fond et texte global */
+.dark body {
+  background-color: #030706 !important;
+  color: #00ff88 !important;
+}
+
+/* 3. Replacement des fonds clairs/beiges */
+.dark [class*="bg-[#b8b29f]"],
+.dark [class*="bg-black/5"],
+.dark [class*="bg-surface"] {
+  background-color: #030706 !important;
+}
+
+/* 4. Replacement du texte sombre */
+.dark [class*="text-[#0f0f0f]"] {
+  color: #00ff88 !important;
+}
+
+/* 5. Bordures vert fluo */
+.dark [class*="border-black"],
+.dark [class*="border-transparent"] {
+  border-color: rgba(0, 255, 136, 0.35) !important;
+}
+
+/* 6. Effet Néon / Glow sur les titres et textes importants */
+.dark h1,
+.dark h2,
+.dark h3,
+.dark .font-bold {
+  text-shadow: 0 0 8px rgba(0, 255, 136, 0.4);
+}
+
+/* 7. Photo de profil - Mode Vert & Noir Phosphore */
+.dark img {
+  filter: grayscale(100%) contrast(150%) brightness(0.9) sepia(100%) hue-rotate(90deg) saturate(500%) !important;
+  box-shadow: 0 0 15px rgba(0, 255, 136, 0.25);
+}
+
+/* ==========================================================================
+   ANIMATIONS & UTILITIES 3D
+   ========================================================================== */
+
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+.transform-style-3d {
+  transform-style: preserve-3d;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.rotate-x-180 {
+  transform: rotateX(180deg);
+}
+
+@keyframes hard-blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.animate-blink {
+  animation: hard-blink 0.8s steps(1, start) infinite;
+}
