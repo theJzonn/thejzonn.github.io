@@ -1,16 +1,28 @@
-# React + Vite
+# ⚡ TACTICAL PORTFOLIO // V4
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> Status: ONLINE // SYSTEM SECURE
+> Target URL: [thejzonn.github.io](https://thejzonn.github.io)
 
-Currently, two official plugins are available:
+## [SYS.ARCH] Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+* **Core:** React 19 / Vite
+* **Styling:** Tailwind CSS v4
+* **Effects:** Custom 3D Flip Animations & Interactive UI Elements
+* **Deployment:** GitHub Pages Pipeline
 
-## React Compiler
+## [SYS.INIT] Local Operations
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+To initialize and run this tactical interface locally on your machine:
 
-## Expanding the ESLint configuration
+```bash
+# Clone the repository
+git clone [https://github.com/thejzonn/thejzonn.github.io.git](https://github.com/thejzonn/thejzonn.github.io.git)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+# Navigate to directory
+cd thejzonn.github.io
+
+# Install dependencies
+npm install
+
+# Launch local dev server
+npm run dev
